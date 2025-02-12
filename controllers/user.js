@@ -1,4 +1,4 @@
-import { compare } from 'bcrypt'
+import { compare } from 'bcryptjs'
 import { User } from '../models/user.js'
 import { Request } from '../models/request.js'
 import { Chat } from '../models/chat.js'
