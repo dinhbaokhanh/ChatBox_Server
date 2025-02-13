@@ -1,7 +1,8 @@
 const corsOptions = {
-  origin: [process.env.CLIENT_URL, 'https://chat-box-beryl.vercel.app/'],
+  origin: ['https://chat-box-beryl.vercel.app', process.env.CLIENT_URL],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
+  allowedHeaders: ['Content-Type', 'Authorization'],
 }
 
 const TOKEN = 'token'
