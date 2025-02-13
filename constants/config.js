@@ -1,10 +1,5 @@
 const corsOptions = {
-  origin: [
-    'http://localhost:5173',
-    'http://localhost:3000',
-    'https://chatbox-server-l5wn.onrender.com',
-    process.env.CLIENT_URL,
-  ],
+  origin: [process.env.CLIENT_URL, 'https://chatbox-server-l5wn.onrender.com'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 }
